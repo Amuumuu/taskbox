@@ -850,6 +850,7 @@
    margin-right: 4px;
  }
  .list-item {
+   position: relative;
    font-size: 14px;
    line-height: 20px;
    display: flex;
