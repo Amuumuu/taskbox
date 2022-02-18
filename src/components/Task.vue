@@ -1,6 +1,5 @@
 <template>
   <div :class="classes">
-    <div style="position:absolute; color: red; top: 0; left: 0; transform: translate(0, -100%)">red</div>
     <label class="checkbox">
       <input type="checkbox" :checked="isChecked" disabled name="checked" />
       <span class="checkbox-custom" @click="archiveTask" />
