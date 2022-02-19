@@ -1,10 +1,10 @@
-import TaskList from './TaskList.vue';
+import PureTaskList from './PureTaskList.vue';
 
 import * as TaskStories from './Task.stories';
 
 export default {
-  component: TaskList,
-  title: 'TaskList',
+  component: PureTaskList,
+  title: 'PureTaskList',
   // 装饰器，对全部的stories使用组件包裹
   decorators: [() => ({ template: '<div style="margin: 3em;"><story/></div>' })],
   argTypes: {
@@ -14,11 +14,11 @@ export default {
 };
 
 const Template = args => ({
-  components: { TaskList },
+  components: { PureTaskList },
   setup() {
     return { args, ...TaskStories.actionsData };
   },
-  template: '<TaskList v-bind="args" />',
+  template: '<PureTaskList v-bind="args" />',
 });
 
 export const Default = Template.bind({});
